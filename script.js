@@ -6,6 +6,8 @@ function updateCountdown() {
 
     if (timeDiff <= 0) {
         document.getElementById('countdown').textContent = 'Happy New Year!';
+        // Uncomment this to allow user to proceed to the next page when 2025 arrives
+        // document.getElementById('enter-button').style.display = 'block'; 
         return;
     }
 
@@ -19,24 +21,20 @@ function updateCountdown() {
 
 setInterval(updateCountdown, 1000);
 
-// Confetti Effect
-document.getElementById('celebrate-button').addEventListener('click', () => {
-    createConfetti();
-});
-
-function createConfetti() {
-    for (let i = 0; i < 100; i++) {
-        const confetti = document.createElement('div');
-        confetti.classList.add('confetti');
-        confetti.style.left = `${Math.random() * 100}%`;
-        confetti.style.animationDuration = `${Math.random() * 2 + 1}s`;
-        document.body.appendChild(confetti);
-    }
-}
-
-// Welcome screen transition
+// Allow test access to next page for now (remove once New Year arrives)
 document.getElementById('enter-button').addEventListener('click', () => {
     document.getElementById('welcome-screen').style.display = 'none';
     document.getElementById('main-content').style.display = 'block';
     document.getElementById('background-music').play();
+});
+
+// User Input Validation for Final Page
+document.getElementById('submit-button').addEventListener('click', () => {
+    const userInput = document.getElementById('user-input').value.trim().toLowerCase();
+    if (userInput === "i love you anuj") {
+        alert("Congratulations! You've completed the challenge!");
+        // Proceed to the next page or action after correct input
+    } else {
+        document.getElementById('error-message').style.display = 'block';
+    }
 });

@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #f0f8ff;
+    background-color: #e0f7fa;
     color: #333;
     text-align: center;
     overflow: hidden;
@@ -17,14 +17,14 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #ffcccb;
+    background-color: #00796b;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
 }
 
-.greeting-card {
+.countdown-container {
     background: #fff;
     padding: 30px;
     border-radius: 10px;
@@ -32,11 +32,11 @@ body {
 }
 
 h1 {
-    color: #ff69b4;
+    color: #004d40;
 }
 
 button {
-    background-color: #ff69b4;
+    background-color: #004d40;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -47,7 +47,7 @@ button {
 }
 
 button:hover {
-    background-color: #ff1493;
+    background-color: #00796b;
 }
 
 .main-content {
@@ -55,46 +55,33 @@ button:hover {
     padding: 20px;
 }
 
-.countdown {
-    background: #fff;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.confetti-section {
+.final-page {
     background: #fff;
     padding: 20px;
     margin: 20px 0;
     border-radius: 10px;
 }
 
-.love-message {
-    background: #fff;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 10px;
+#error-message {
+    color: red;
+    font-size: 16px;
 }
 
 #countdown {
     font-size: 40px;
-    color: #ff1493;
+    color: #004d40;
 }
 
-.confetti {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: #ff1493;
-    animation: confetti-fall 2s infinite;
+#submit-button {
+    background-color: #004d40;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
-@keyframes confetti-fall {
-    0% {
-        transform: translateY(-100px) rotate(0deg);
-    }
-    100% {
-        transform: translateY(500px) rotate(360deg);
-    }
+#submit-button:hover {
+    background-color: #00796b;
 }

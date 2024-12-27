@@ -7,32 +7,31 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Welcome Page with Countdown Timer -->
     <div id="welcome-screen" class="welcome-screen">
-        <div class="greeting-card">
+        <div class="countdown-container">
             <h1>Happy New Year, My Love!</h1>
-            <p>May this year bring you endless happiness and love.</p>
-            <button id="enter-button">Enter</button>
+            <p id="countdown"></p>
+            <!-- Button for testing to go to the next page -->
+            <button id="enter-button" class="enter-button">Go to Next Page</button>
         </div>
     </div>
 
+    <!-- Main Content Page -->
     <div id="main-content" class="main-content">
-        <section class="countdown">
-            <h2>The New Year Countdown!</h2>
-            <div id="countdown"></div>
-        </section>
-
         <section class="love-message">
             <h2>My Heartfelt Message to You:</h2>
-            <p class="message">
-                "I love you more than words can describe. Every moment with you is a precious gift. Here's to another year of memories together, my beautiful and amazing partner."
-            </p>
+            <p>"I love you more than words can describe. Every moment with you is a precious gift. Here's to another year of memories together, my beautiful and amazing partner."</p>
         </section>
 
-        <section class="confetti-section">
-            <h2>Let's Celebrate!</h2>
-            <p>Click the button to make the celebration more special!</p>
-            <button id="celebrate-button">Celebrate</button>
-        </section>
+        <!-- Final Page: User Input Section -->
+        <div id="final-page" class="final-page">
+            <h2>To continue, please type:</h2>
+            <p>"I love you Anuj"</p>
+            <input type="text" id="user-input" placeholder="Type here...">
+            <button id="submit-button">Submit</button>
+            <p id="error-message" class="error-message" style="display:none;">Incorrect. Please try again.</p>
+        </div>
     </div>
 
     <audio id="background-music" loop>

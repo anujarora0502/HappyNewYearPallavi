@@ -4,12 +4,12 @@ function updateCountdown() {
     const now = new Date();
     const timeDiff = newYear - now;
 
-    if (timeDiff <= 0) {
+    // if (timeDiff <= 0) {
         document.getElementById('countdown').textContent = 'Happy New Year!';
         // Show the button after the New Year countdown finishes
         document.getElementById('enter-button').style.display = 'block';
         return;
-    }
+    // }
 
     const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
     const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));

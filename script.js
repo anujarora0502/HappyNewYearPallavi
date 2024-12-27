@@ -6,8 +6,8 @@ function updateCountdown() {
 
     if (timeDiff <= 0) {
         document.getElementById('countdown').textContent = 'Happy New Year!';
-        // Uncomment this to allow user to proceed to the next page when 2025 arrives
-        // document.getElementById('enter-button').style.display = 'block'; 
+        // Show the button after the New Year countdown finishes
+        document.getElementById('enter-button').style.display = 'block';
         return;
     }
 

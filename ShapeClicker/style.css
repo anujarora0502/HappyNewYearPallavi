@@ -1,0 +1,40 @@
+body {
+    background: black;
+    color: white;
+  }
+  
+  /* JavaScript */
+  .message {
+    text-align: center;
+    padding: 10px;
+    font-size: 2rem;
+  }
+  
+  .box {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 50px;
+    left: 20%;
+    background-color: cornsilk;
+    border: 1px solid black;
+    font-size: 1.5em;
+    line-height: 100px;
+  }
+
+  /* Styling for Cross Button */
+.close-btn {
+  position: absolute;
+  top: 2px;
+  right: 10px;
+  font-size: 3rem;
+  color: #333;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.712);
+}
+
+.close-btn:hover {
+  color: red;
+}

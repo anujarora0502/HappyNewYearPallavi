@@ -3,41 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy New Year, My Love!</title>
+    <title>Pallavi's Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Welcome Page with Countdown Timer -->
-    <div id="welcome-screen" class="welcome-screen">
-        <div class="countdown-container">
-            <h1>Happy New Year, My Love!</h1>
-            <p id="countdown"></p>
-            <!-- Button for testing to go to the next page -->
-            <button id="enter-button" class="enter-button" style="display:none;">Go to Next Page</button>
+    <div class="container">
+        <h1>Happy New Year Pallaviiii</h1></br>
+        <p>What do you wanna do??</p>
+        
+        <div class="buttons">
+            <button onclick="window.location.href='page1.html'">Page 1</button>
+            <button onclick="window.location.href='page2.html'">Page 2</button>
+            <button onclick="window.location.href='page3.html'">Page 3</button>
+            <button onclick="window.location.href='page4.html'">Page 4</button>
+            <button onclick="window.location.href='page5.html'">Page 5</button>
         </div>
     </div>
-
-    <!-- Main Content Page -->
-    <div id="main-content" class="main-content" style="display:none;">
-        <section class="love-message">
-            <h2>My Heartfelt Message to You:</h2>
-            <p>"I love you more than words can describe. Every moment with you is a precious gift. Here's to another year of memories together, my beautiful and amazing partner."</p>
-        </section>
-
-        <!-- Final Page: User Input Section -->
-        <div id="final-page" class="final-page">
-            <h2>To continue, please type:</h2>
-            <p>"I love you Anuj"</p>
-            <input type="text" id="user-input" placeholder="Type here...">
-            <button id="submit-button">Submit</button>
-            <p id="error-message" class="error-message" style="display:none;">Incorrect. Please try again.</p>
-        </div>
-    </div>
-
-    <audio id="background-music" loop>
-        <source src="your-romantic-song.mp3" type="audio/mp3">
-    </audio>
-
     <script src="script.js"></script>
 </body>
 </html>

@@ -12,13 +12,22 @@
         <p>What do you wanna do??</p>
         
         <div class="buttons">
-            <button onclick="window.location.href='page1.html'">Page 1</button>
+            <!-- Replacing "Page 1" with "Celebrate" -->
+            <button id="celebrateButton">Celebrate</button>
             <button onclick="window.location.href='page2.html'">Page 2</button>
             <button onclick="window.location.href='page3.html'">Page 3</button>
             <button onclick="window.location.href='page4.html'">Page 4</button>
             <button onclick="window.location.href='page5.html'">Page 5</button>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.x/dist/index.umd.js"></script>
+    <script src="https://unpkg.com/fireworks-js@2.x/dist/index.umd.js"></script>
+    <!-- Usage -->
+    <script defer>
+      const container = document.querySelector('.fireworks')
+      const fireworks = new Fireworks.default(container)
+      fireworks.start()
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
